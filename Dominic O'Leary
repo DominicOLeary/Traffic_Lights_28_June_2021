@@ -1,0 +1,23 @@
+import UIKit
+class ViewController: UIViewController  {
+
+@IBOutlet var centerLabel: UILabel !
+
+      override func viewDidLoad()
+      // Do any additional set up after loadfing the view
+
+      centerLabel.text = " Much More Interesting text"
+
+      print(centerLabel.text)
+
+      if let string = centerLabel.text  {
+      print (string)
+      }
+
+      guard let string = centerLabel.text {
+      else  {
+      return
+      }
+      print(string)
+    }
+}
